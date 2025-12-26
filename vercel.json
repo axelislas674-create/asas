@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "main.ts": {
+      "runtime": "vercel-deno@2.1.0"
+    }
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "main.ts" }
+  ]
+}
