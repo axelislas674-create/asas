@@ -3,7 +3,7 @@ import HeroActions from "@/islands/HeroActions.tsx";
 import PrizesSection from "../components/PrizeSection.tsx";
 
 export default function Inicio() {
-  const TARGET_DATE = new Date("2026-01-01T00:00:00").getTime();
+  const TARGET_DATE = new Date("2026-01-20T00:00:00").getTime();
 
   return (
     <main className="flex flex-col overflow-x-hidden bg-[#1f374f]">
