@@ -1,35 +1,34 @@
-// components/home/Hero.tsx
+
 export default function Hero({
   children,
-  isGate = false // Propiedad nueva
+  isGate = false
 }: {
   children?: preact.ComponentChildren;
   isGate?: boolean
 }) {
   return (
-    <div className="bg-Azul relative h-screen w-full shrink-0 overflow-hidden">
+    <div className="bg-Azul relative h-[65vh] md:h-screen w-full shrink-0 overflow-hidden">
       <img
-        src="/img/Hero.webp"
+        src="/img/BTO.webp"
         fetchpriority="high"
         loading="eager"
-        decoding="sync"
-        className="absolute inset-0 h-full w-full object-cover object-[50%_10%]"
-        alt="Hero Btoq"
-        /* APLICAMOS LA MÁSCARA SOLO SI ES MODO GATE */
+        className="absolute inset-0 h-full w-full object-cover object-center"
+          alt="Hero Btoq"
         style={isGate ? {
           maskImage: "linear-gradient(to bottom, black 50%, transparent 100%)",
           WebkitMaskImage: "linear-gradient(to bottom, black 50%, transparent 100%)"
         } : {}}
       />
 
-      <div className="relative z-20 flex h-full items-center justify-center">
+      {/* 3. Contenido centrado: pt-24 para que no choque con el casco de la Navbar */}
+      <div className="relative z-20 flex h-full items-center justify-center pt-24 px-4">
         {children}
       </div>
 
-      {/* Degradado inferior dinámico: más alto si es Gate */}
+      {/* 4. Degradado inferior: lo hacemos un poco más sutil en móvil */}
       <div className={`
         absolute inset-x-0 bottom-0 bg-linear-to-t from-Azul to-transparent z-10
-        ${isGate ? "h-[60vh]" : "h-32"}
+        ${isGate ? "h-[40vh]" : "h-32"}
       `} />
     </div>
   );

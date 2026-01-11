@@ -1,12 +1,12 @@
+// routes/showmatch.tsx
 import { Head } from "fresh/runtime";
-import { PageProps } from "fresh";
+import { define } from "@/utils.ts";
 import { TORNEO_CONFIG } from "@/utils/config.ts";
 import Gate from "@/components/Gate.tsx";
 
-export default function Showmatch(_props: PageProps) {
+export default define.page(function Showmatch() {
   const ahora = Date.now();
   const haEmpezado = ahora >= TORNEO_CONFIG.fechaInicio;
-
   return (
     <>
       <Head>
@@ -24,4 +24,4 @@ export default function Showmatch(_props: PageProps) {
       </div>
     </>
   );
-}
+});

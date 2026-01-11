@@ -1,9 +1,11 @@
+// routes/streams.tsx
 import { Head } from "fresh/runtime";
-import { PageProps } from "fresh";
+import { define } from "@/utils.ts"; // Importas tu define con State
 import { TORNEO_CONFIG } from "@/utils/config.ts";
 import Gate from "@/components/Gate.tsx";
 
-export default function StreamsPage(_props: PageProps) {
+// Usamos define.page para habilitar el nuevo sistema de contexto
+export default define.page(function StreamsPage() {
   const ahora = Date.now();
   const haEmpezado = ahora >= TORNEO_CONFIG.fechaInicio;
 
@@ -24,4 +26,4 @@ export default function StreamsPage(_props: PageProps) {
       </div>
     </>
   );
-}
+});

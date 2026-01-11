@@ -1,6 +1,6 @@
 // routes/clasificacion.tsx
 import { Head } from "fresh/runtime";
-import { PageProps } from "fresh"; // Cambiado a "fresh" para evitar errores de resolución
+import { PageProps } from "fresh";
 import { TORNEO_CONFIG } from "@/utils/config.ts";
 import Gate from "@/components/Gate.tsx";
 

@@ -6,19 +6,6 @@
   --color-Blanco: #ffffff;
   --color-Negro: #000000;
 }
-/* {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-
-  -webkit-user-drag: none;
-  -khtml-user-drag: none;
-  -moz-user-drag: none;
-  -o-user-drag: none;
-}
-quitar interaccion(pasar a tw)
-*/
 
 /* 2. DEFINICIÓN DE FUENTES */
 @font-face {
