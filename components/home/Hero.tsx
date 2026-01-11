@@ -32,7 +32,7 @@ export default function Hero({
         alt="Texto decorativo"
         className="absolute left-1/2 -translate-x-1/2 z-15 pointer-events-none"
         style={{
-          bottom: "19%",
+          bottom: "14%",
           width: "80vw",
           maxWidth: "40vw"
         }}
