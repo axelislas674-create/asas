@@ -54,7 +54,7 @@ export default function Inicio() {
             <div className="ralewayR space-y-[2vw] text-white/90
                             text-[1.8vw] md:text-[1.3vw] leading-relaxed">
               <p>
-                Este torneo está pensado para todo aquel que quiera medir sus
+                Este torneo está penssado para todo aquel que quiera medir sus
                 habilidades en SoloQueue contra otros jugadores.
               </p>
               <p>
