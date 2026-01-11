@@ -55,7 +55,7 @@ export default function Inicio() {
                             text-[1.8vw] md:text-[1.3vw] leading-relaxed">
               <p>
                 Este torneo está penssado para todo aquel que quiera medir sus
-                habilidades en SoloQueue contra otros jugadores.
+                habilidades en SoloQueues contra otros jugadores.
               </p>
               <p>
                 Streamers, mods, vips, viewers, etc. Absolutamente todos contra
