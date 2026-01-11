@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="select-none [user-drag:none] [-webkit-user-drag:none] flex flex-col items-center md:items-start">
             <span className={labelCls}>ART & DESIGN</span>
             <span className={textCls}>
-              Beto <span className={dotSpan}>•</span> Lummy
+              Beto <span className={dotSpan}>•</span> Lumy
             </span>
           </div>
 
